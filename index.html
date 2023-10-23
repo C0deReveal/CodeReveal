@@ -204,29 +204,29 @@ Contact
 <div class="col-md-6 col-lg-6 col-sm-12">
 <div class="contact-block">
 <h2>Contact Form</h2>
-<form id="contactForm">
+<form id="contactForm" method="post" autocomplete="off" name="google-sheet">
 <div class="row">
 <div class="col-md-6">
 <div class="form-group">
-<input type="text" class="form-control" id="name" name="name" placeholder="Name" required data-error="Please enter your name">
+<input type="text" class="form-control" id="name" name="Name" placeholder="Name" required data-error="Please enter your name">
 <div class="help-block with-errors"></div>
 </div> 
 </div>
 <div class="col-md-6">
 <div class="form-group">
-<input type="text" placeholder="Email" id="email" class="form-control" name="email" required data-error="Please enter your email">
+<input type="email" placeholder="Email" id="email" class="form-control" name="Email" required data-error="Please enter your email">
 <div class="help-block with-errors"></div>
 </div> 
 </div>
  <div class="col-md-12">
 <div class="form-group">
-<input type="text" placeholder="Subject" id="msg_subject" class="form-control" required data-error="Please enter your subject">
+<input type="text" placeholder="Subject" name="Subject" id="msg_subject" class="form-control" required data-error="Please enter your subject">
 <div class="help-block with-errors"></div>
 </div>
 </div>
 <div class="col-md-12">
 <div class="form-group"> 
-<textarea class="form-control" id="message" placeholder="Your Message" rows="5" data-error="Write your message" required></textarea>
+<textarea class="form-control" name="Message" id="message" placeholder="Your Message" rows="5" data-error="Write your message" required></textarea>
 <div class="help-block with-errors"></div>
 </div>
 <div class="submit-button">
@@ -301,6 +301,6 @@ Contact
 <script src="assets/js/jquery.nav.js"></script>
 <script src="assets/js/jquery.slicknav.js"></script>
 <script src="assets/js/main.js"></script>
-
+<script src="assets/js/contact.js"></script>
 </body>
 </html>
